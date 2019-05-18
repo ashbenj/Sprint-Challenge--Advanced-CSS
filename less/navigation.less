@@ -1,1 +1,29 @@
 // Navigation code here
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 60%;
+
+    @media (max-width: 500px) {
+        margin: 0 auto;
+        flex-wrap: wrap;
+        width: 100;
+    }
+
+  .top-content {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }  
+}
+
+.nav a {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    justify-content: space-around;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 20px;
+}
