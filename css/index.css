@@ -164,7 +164,7 @@ p {
   display: flex;
   justify-content: space-around;
   margin: auto;
-  width: 60%;
+  width: 62%;
 }
 @media (max-width: 500px) {
   .nav {
@@ -202,6 +202,7 @@ footer {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-color: #F6F6F6;
 }
 .home .top-content h2 {
   padding: 20px;
@@ -259,4 +260,14 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .walk .walk-img .custom-btn {
+  background-color: #22283A;
+  border: none;
+  height: 40px;
+  width: 30%;
+  border-radius: 10px;
+  font-size: 17px;
+  color: white;
+  font-weight: bold;
 }
