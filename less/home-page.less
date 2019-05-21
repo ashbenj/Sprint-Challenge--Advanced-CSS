@@ -2,22 +2,6 @@
 
 .home {
 
-  .top-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background-color: @nav-bg;
-
-    h2 {
-      padding: 20px;
-    }
-
-    img {
-      border-radius: 10px;
-    }
-  }
-
   .intro {
 
     h2 {
@@ -34,12 +18,28 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    
+    .sky {
+      @media @phone {
+        display: none;
+      }
+
+    
+    }
+    .launch {
+      @media @phone {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 100%
+      }
     }
   }
 
@@ -61,6 +61,9 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone{
+      flex-direction: column-reverse;
+    }
 
     .walk-text {
       width: 50%;
@@ -72,29 +75,24 @@
       p {
         margin-bottom: 26px;
       }
+    }
 
+    .custom-btn {
+      button {
+        .sign-up-btn(@porcelain, @btn-bg-color);
+      }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+    
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
-
-  .custom-btn {
-    background-color: #22283A;
-    border: none;
-    height: 40px;
-    width: 30%;
-    border-radius: 10px;
-    font-size: 17px;
-    color: white;
-    font-weight: bold;
-  }
     }
   }
-}// home
+}

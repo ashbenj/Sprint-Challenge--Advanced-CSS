@@ -160,32 +160,38 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.nav {
+.nav-content {
   display: flex;
-  justify-content: space-around;
-  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   width: 62%;
+  height: 100px;
+  width: 800px;
 }
 @media (max-width: 500px) {
-  .nav {
+  .nav-content {
     margin: 0 auto;
     flex-wrap: wrap;
-    width: 100;
+    width: 100%;
+    padding-bottom: 50px;
   }
 }
-.nav .top-content {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-.nav a {
-  display: flex;
+.nav-content a {
   flex-direction: row;
-  font-size: 18px;
   justify-content: space-around;
+  margin: 0 40px;
+  font-size: 18px;
   text-decoration: none;
   color: black;
   padding-bottom: 20px;
+}
+h2 {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-left: 250px;
 }
 footer {
   color: #22283B;
@@ -196,19 +202,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.home .top-content {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #F6F6F6;
-}
-.home .top-content h2 {
-  padding: 20px;
-}
-.home .top-content img {
-  border-radius: 10px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -221,11 +214,26 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -243,6 +251,11 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -252,6 +265,14 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .custom-btn button {
+  color: #F6F7F8;
+  background-color: #22283A;
+}
+.home .walk .custom-btn button:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -260,14 +281,4 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-.home .walk .walk-img .custom-btn {
-  background-color: #22283A;
-  border: none;
-  height: 40px;
-  width: 30%;
-  border-radius: 10px;
-  font-size: 17px;
-  color: white;
-  font-weight: bold;
 }
