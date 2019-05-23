@@ -1,1 +1,21 @@
 // Mixins Here
+.sign-up-btn(@porcelain, @btn-bg-color) {
+    color: @porcelain;
+    background-color: @btn-bg-color;
+
+    &:hover {
+        background-color: @porcelain;
+        color: @btn-bg-color;
+    }
+
+}
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .bordered() {
+    padding: 10px 0;
+    margin: 10px 0;
+    }
